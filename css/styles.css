@@ -112,10 +112,10 @@ a:hover {
 
 
 /*****************/
-/*    EduWallet Page    */
+/*    Learner Credential Wallet Page    */
 /*****************/
 
-.eduwallet-icon {
+.lcw-icon {
 	width: 12rem;
 }	
 
@@ -143,7 +143,7 @@ a:hover {
 		font-size: 1.75rem;
 	}
 
-	.eduwallet-icon {
+	.lcw-icon {
 		width: 15rem;
 	}
 
