@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request Credentials</title>
+</head>
+<body>
+<div>
+  <p>
+    Redirecting your credential pickup request to the mobile app.
+  </p>
+  <p>
+    If you are not automatically redirected, please visit:
+    <a id="redurl" href=""></a>
+  </p>
+</div>
+<script>
+  const currentUrl = new URL(window.location)
+  const deepLinkUrl = new URL('dccrequest://request')
+  // Copy the query params of the current page to the deep link
+  deepLinkUrl.search = currentUrl.search
+
+  // Update the message displayed to the user
+  const link = document.getElementById('redurl')
+  link.innerHTML = deepLinkUrl
+  link.href = deepLinkUrl
+
+  // Redirect the user to the new deeplink url
+  window.location.href = deepLinkUrl
+</script>
+</body>
+</html>
