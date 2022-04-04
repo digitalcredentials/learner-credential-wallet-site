@@ -127,6 +127,12 @@ a:hover {
 	width: 13.2rem;
 }
 
+.btn-github {
+	text-decoration: none;
+	font-size: 1.3rem;
+	margin-top: 40px;
+}
+
 
 /*************************/
 /*     Media Queries     */
@@ -154,4 +160,18 @@ a:hover {
 
 }
 /* end of min-width 500px */
+
+
+/* Min-width 750px */
+@media (min-width: 750px) {
+
+	.btn-github {
+		position: absolute;
+		margin-top: 0px;
+		top: 50px;
+		right: 45px;
+	}
+
+}
+/* end of min-width 750px */
 
