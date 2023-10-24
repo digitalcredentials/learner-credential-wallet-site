@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "app.lcw",
+    "sha256_cert_fingerprints":
+    ["8F:1E:73:DA:FE:CD:F9:08:2E:0E:42:BD:EC:D4:55:A4:99:AE:30:96:28:E9:16:CC:58:B4:0A:FB:9A:E0:77:0C"]
+  }
+}]
