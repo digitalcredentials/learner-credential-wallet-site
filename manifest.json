@@ -1,0 +1,17 @@
+{
+  "icons": [
+    {
+      "sizes": "48x48 64x64",
+      "src": "https://lcw.app/images/favicon-96x96.png",
+      "type": "image/png"
+    }
+  ],
+  "name": "Learner Credential Wallet",
+  "short_name": "LCW",
+  "credential_handler": {
+    "url": "https://lcw.app//mobile",
+    "enabledTypes": ["VerifiablePresentation"],
+    "acceptedInput": "url",
+    "acceptedProtocols": ["vcapi"]
+  }
+}

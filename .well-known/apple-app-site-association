@@ -5,7 +5,7 @@
       "details": [
            {
              "appID": "A35W4MM59Y.edu.mit.eduwallet",
-             "paths": [ "*" ]
+             "paths": [ "/mobile/*" ]
            }
        ]
    }
