@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- SEO Meta Tags -->
+      <meta name="description" content="Open Source Learner Credential Wallet">
+      <meta name="author" content="MIT">
+
+      <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+      <meta property="og:site_name" content="Learner Credential Wallet" /> <!-- website name -->
+      <meta property="og:site" content="lcw.app" /> <!-- website link -->
+      <meta property="og:title" content="Learner Credential Wallet"/> <!-- title shown in the actual shared post -->
+      <meta property="og:description" content="Store your learner credentials" /> <!-- description shown in the actual shared post -->
+      <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+      <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+      <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+      <!-- Webpage Title -->
+      <title>Register Wallet</title>
+
+      <!-- Favicon -->
+      <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+      <!-- Styles -->
+      <link rel="preconnect" href="https://fonts.googleapis.com"> 
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@700&display=swap" rel="stylesheet">
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+
+      <!-- Compiled and minified Materialize JS/CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!--Credential Handler API Polyfill-->
+      <script src="https://unpkg.com/credential-handler-polyfill@3.2.0/dist/credential-handler-polyfill.min.js"></script>
+      <script src="https://unpkg.com/web-credential-handler@2.0.2/dist/web-credential-handler.min.js"></script>
+  </head>
+  <body data-spy="scroll" data-target=".fixed-top">
+      <!-- Learner Credential Wallet registration content-->
+      <header id="Learner Credential Wallet Registration" class="lcw">
+          <div class="container">
+              <div class="text-container text-center">
+                  <img class="lcw-icon mt-4" src="images/lcw-icon.png" alt="Learner Credential Wallet icon consisting of folders">
+                  <p class="title text-center">Learner Credential Wallet</p>
+                  <div class="card bg-transparent border-light mx-auto w-50">
+                      <h5 class="card-header border-light">Register Wallet</h5>
+                      <div class="card-body">
+                          <p>
+                              By clicking 'Register', you will enable your wallet to receive credentials from web applications.
+                          </p>
+                          <button type="button" class="btn bg-transparent border border-light">Register</button>
+                      </div>
+                  </div>
+              </div> <!-- end of text-container -->
+              <footer>
+                  <p class="footer-text text-center">
+                      Copyright 2022-2023, Massachusetts Institute of Technology</p>
+                  <p class="footer-text text-center">
+                      <a href="https://digitalcredentials.mit.edu/">Digital Credentials Consortium</a></p>
+                  <p class="footer-text text-center">
+                      <a href="terms.html">Terms and Conditions of Use</a> • <a href="privacy.html">Privacy Policy</a> • <a href="https://accessibility.mit.edu/">Accessibility</a> • <a href="https://github.com/digitalcredentials/learner-credential-wallet">View on Github</a></p>
+              </footer>
+          </div> <!-- end of container -->
+      </header> <!-- end of header -->
+      <!-- end of header -->
+
+      <!-- Scripts -->
+      <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+      <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+      <script src="./config.js"></script>
+      <script src="./register-wallet.js"></script>
+      <script>
+          // sets up functionality when the document is ready
+          function onDocumentReady(fn) {
+              if (document.readyState !== 'loading') {
+                  fn();
+              } else {
+                  document.addEventListener('DOMContentLoaded', fn);
+              }
+          }
+          onDocumentReady(() => {
+            document.getElementById('registerButton').addEventListener('click', () => {
+                // registers this demo wallet with the user's browser,
+                // from register-wallet.js
+                console.log('Registering wallet...');
+                registerWalletWithBrowser()
+                  .catch(e => console.error('Error in registerWalletWithBrowser:', e));
+            });
+          });
+      </script>
+  </body>
+</html>

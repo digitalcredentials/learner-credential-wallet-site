@@ -31,13 +31,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@700&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-
-    <!-- Compiled and minified Materialize JS/CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!--Credential Handler API Polyfill-->
-    <script src="https://unpkg.com/credential-handler-polyfill@3.2.0/dist/credential-handler-polyfill.min.js"></script>
-    <script src="https://unpkg.com/web-credential-handler@2.0.2/dist/web-credential-handler.min.js"></script>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -48,22 +41,9 @@
                         <img class="lcw-icon mt-4" src="images/lcw-icon.png" alt="Learner Credential Wallet icon consisting of folders">
                         <p class="title text-center">Learner Credential Wallet</p>
                         <h2 class="pt-2 subtitle">A place to store your learner credentials</h2>
-                        <div class="download-register-card-group">
-                            <div class="download-register-card card-panel grey darken-2 mr-3">
-                                <h5>Download</h5>
-                                <a href="https://apps.apple.com/app/learner-credential-wallet/id1590615710?"><img class="ios-icon pt-2" src="images/ios-icon.svg" alt="Download on the App Store"></a>
-                                <a href="https://play.google.com/store/apps/details?id=app.lcw&"><img class="android-icon pt-2" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
-                            </div>
-                            <div class="download-register-card card-panel grey darken-2 ml-3">
-                                <h5>Register</h5>
-                                <p>
-                                    By clicking 'Register', you will enable your wallet to receive credentials from web applications.
-                                </p>
-                                <a class="register-button btn" id="registerButton">
-                                    <span class="white-text">Register</span>
-                                </a>
-                            </div>
-                        </div>
+                        <a href="https://apps.apple.com/app/learner-credential-wallet/id1590615710?"><img class="ios-icon pt-2" src="images/ios-icon.svg" alt="Download on the App Store"></a>
+                        <!--<button type="button" class="btn btn-secondary btn-lg mt-3" disabled><h3 class="mb-0">Coming Soon</h3></button>-->
+                        <a href="https://play.google.com/store/apps/details?id=app.lcw&"><img class="android-icon pt-2" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
                         <p class="text-center pt-4">Learner Credential Wallet is an <a href="https://github.com/digitalcredentials/learner-credential-wallet">open source</a> mobile wallet developed by the <a href="https://digitalcredentials.mit.edu">Digital Credentials Consortium</a>, a network of leading international universities designing an open infrastructure for academic credentials.</p>
                         <p class="text-center pt-4">Learn more about the <a href="pilot.html">2022-2023 Learner Credential Pilot</a></p>
 			<p class="text-center pt-4"><a href="faq.html">Frequently Asked Questions</a></p>
@@ -85,26 +65,5 @@
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="./config.js"></script>
-    <script src="./register-wallet.js"></script>
-    <script>
-        // sets up functionality when the document is ready
-        function onDocumentReady(fn) {
-          if(document.readyState !== 'loading') {
-            fn();
-          } else {
-            document.addEventListener('DOMContentLoaded', fn);
-          }
-        }
-        onDocumentReady(() => {
-          document.getElementById('registerButton').addEventListener('click', () => {
-            // registers this demo wallet with the user's browser,
-            // from register-wallet.js
-            console.log('Registering wallet...');
-            registerWalletWithBrowser()
-              .catch(e => console.error('Error in registerWalletWithBrowser:', e));
-          });
-        });
-      </script>
 </body>
 </html>

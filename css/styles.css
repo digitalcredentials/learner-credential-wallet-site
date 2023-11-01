@@ -127,28 +127,6 @@ a:hover {
 	width: 13.2rem;
 }
 
-.register-button {
-	background-color: #1f2936 !important;
-	color: #ffffff;
-}
-
-.download-register-card {
-	border-radius: 10px;
-	width: 40%;
-}
-
-.download-register-card p {
-	border-color: #ffffff;
-	border-radius: 10px;
-	border-width: 1px;
-	padding: 5px;
-}
-
-.download-register-card-group {
-	display: flex;
-	justify-content: center;
-}
-
 /*************************/
 /*     Media Queries     */
 /*************************/	
