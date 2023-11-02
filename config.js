@@ -9,6 +9,3 @@
  */
 
 const WALLET_LOCATION = 'https://lcw.app/mobile';
-
-const WALLET_PACKAGE_ANDROID = 'app.lcw';
-const WALLET_PACKAGE_IOS = 'edu.mit.eduwallet';

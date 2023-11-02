@@ -2,6 +2,10 @@
  * Copyright (c) 2023, Massachusetts Institute of Technology, Inc. All rights reserved.
  */
 
+// wallet package
+const WALLET_PACKAGE_ANDROID = 'app.lcw';
+const WALLET_PACKAGE_IOS = 'edu.mit.eduwallet';
+
 // opens wallet based on mobile os
 function openWallet() {
   const userAgent = (navigator.userAgent || navigator.vendor || window.opera).toLowerCase();
