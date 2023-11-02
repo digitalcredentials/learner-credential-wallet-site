@@ -9,7 +9,7 @@
   "name": "Learner Credential Wallet",
   "short_name": "LCW",
   "credential_handler": {
-    "url": "https://lcw.app//mobile",
+    "url": "https://lcw.app/mobile",
     "enabledTypes": ["VerifiablePresentation"],
     "acceptedInput": "url",
     "acceptedProtocols": ["vcapi"]
