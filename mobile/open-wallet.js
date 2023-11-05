@@ -40,6 +40,9 @@ function openAndroidWallet() {
 
 // opens iOS wallet
 function openIosWallet() {
+  console.log('window.location before:', window.location);
   const [_, locationPath] = window.location.href.split('https://');
+  console.log('locationPath:', locationPath);
   window.location.replace(`${WALLET_PACKAGE_IOS}://${locationPath}`);
+  console.log('window.location after:', window.location);
 }
