@@ -4,12 +4,11 @@
 
 // wallet package
 const WALLET_PACKAGE_ANDROID = 'app.lcw';
-const WALLET_PACKAGE_IOS = 'edu.mit.eduwallet.ayo';
+const WALLET_PACKAGE_IOS = 'edu.mit.eduwallet';
 
 // opens wallet based on mobile os
 function openWallet() {
   const userAgent = (navigator.userAgent || navigator.vendor || window.opera).toLowerCase();
-  console.log('userAgent:', userAgent);
 
   // Windows detection (must come first because its UA also contains "android")
   if (/windows phone/i.test(userAgent)) {
@@ -32,18 +31,12 @@ function openWallet() {
 
 // opens Android wallet
 function openAndroidWallet() {
-  console.log('window.location before:', window.location);
   const [_, locationPath] = window.location.href.split('https://');
-  console.log('locationPath:', locationPath);
   window.location.replace(`intent://${locationPath}#Intent;scheme=https;package=${WALLET_PACKAGE_ANDROID};end`);
-  console.log('window.location after:', window.location);
 }
 
 // opens iOS wallet
 function openIosWallet() {
-  console.log('window.location before:', window.location);
   const [_, locationPath] = window.location.href.split('https://');
-  console.log('locationPath:', locationPath);
   window.location.replace(`${WALLET_PACKAGE_IOS}://${locationPath}`);
-  console.log('window.location after:', window.location);
 }
