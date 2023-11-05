@@ -4,11 +4,12 @@
 
 // wallet package
 const WALLET_PACKAGE_ANDROID = 'app.lcw';
-const WALLET_PACKAGE_IOS = 'edu.mit.eduwallet';
+const WALLET_PACKAGE_IOS = 'edu.mit.eduwallet.ayo';
 
 // opens wallet based on mobile os
 function openWallet() {
   const userAgent = (navigator.userAgent || navigator.vendor || window.opera).toLowerCase();
+  console.log('userAgent:', userAgent);
 
   // Windows detection (must come first because its UA also contains "android")
   if (/windows phone/i.test(userAgent)) {
