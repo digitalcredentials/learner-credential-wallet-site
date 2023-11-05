@@ -6,7 +6,11 @@
            {
              "appID": "A35W4MM59Y.edu.mit.eduwallet",
              "paths": [ "/mobile/*" ]
-           }
+           },
+           {
+            "appID": "AYCQ9NPBFZ.edu.mit.eduwallet",
+            "paths": [ "/mobile/*" ]
+          }
        ]
    }
 }
