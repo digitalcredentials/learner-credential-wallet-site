@@ -84,6 +84,12 @@ footer {
 	margin-bottom: 0.5rem;
 }
 
+.version-text {
+	color: #c7c7c7;
+	font-size: 1rem;
+	margin-top: -0.5rem;
+}
+
 .p-small {
 	font-size: 1rem;
 }
