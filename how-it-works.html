@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Open Source Learner Credential Wallet">
+    <meta name="author" content="MIT">
+
+    <!-- OG Meta Tags -->
+    <meta property="og:site_name" content="Learner Credential Wallet" />
+    <meta property="og:site" content="lcw.app" />
+    <meta property="og:title" content="Learner Credential Wallet"/>
+    <meta property="og:description" content="Store your learner credentials" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Webpage Title -->
+    <title>Learner Credential Wallet</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    
+    <style>
+        /* Custom button styles */
+        .btn-custom {
+            background-color: #429EA6;
+            border-color: #429EA6;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .btn-custom:hover {
+            background-color: #3a8a91;
+            border-color: #3a8a91;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/lcw-icon.png" alt="LCW" height="30" class="d-inline-block align-top mr-2">
+                Learner Credential Wallet
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="userguide.html">User Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="privacy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- How it works content-->
+    <header id="Learner Credential Wallet" class="lcw" style="padding-top: 80px;">
+        <div class="container mt-5">
+            <h1 class="pb-2 text-center">How it works</h1>
+            
+            <p>The way we learn has been transformed by technology. Whether in traditional classrooms, online programs, or workplace and life experiences, we are acquiring knowledge and skills and increasingly sharing them across the web in pursuit of opportunities. To protect our personal information while showcasing the skills and achievements we value, we need a credentialing system that matches innovation in education and learning.</p>
+            
+            <p>A digital credential is a digital version of an achievement. You may have already received one if you have taken an online course or attended an institution that grants e-diplomas. However, not all digital credentials follow the same technical standards. This means that not all digital credentials can be stored in every wallet.</p>
+            
+            <h2 class="pb-2 text-center">About W3C Verifiable Credentials and Open Badges</h2>
+            
+            <p>The Digital Credentials Consortium (DCC) develops software that supports <a href="https://www.w3.org/TR/vc-data-model-2.0/#what-is-a-verifiable-credential">W3C Verifiable Credentials</a> (W3C VCs), a specification for making claims on the web. A profile of this standard used specifically for education, training, and skills is called <a href="https://www.1edtech.org/standards/open-badges">Open Badges 3.0</a> (OBv3). This can be used for achievements like degrees, microcredentials, certificates, or even granular skills and competencies. Currently, the Learner Credential Wallet (LCW) accepts only credentials that follow the OBv3 standard.</p>
+            
+            <p>W3C VCs have emerged as an effective way of creating digital versions of records and documents like ID documents, vaccination records, supply chain provenance, and proof of purchase or ownership.</p>
+            
+            <p>In the past digital credentials for education were often issued using an earlier version of Open Badges (specifically, version 2.0) that was not compatible with the W3C VC infrastructure. In practice, this meant that educational credentials would need to be stored, shared and consumed separately from W3C VCs.</p>
+            
+            <p>In the next phase of standards development, standards architects chose to align credentials for education with W3C VCs. Thus, OBv3 was put forth, offering the same security and portability as W3C VCs but with added features designed to promote the effective sharing of skills and achievements. Some credentialing platforms may still be using earlier versions of Open Badges. These credentials share some of the same attributes as OBv3 but they do not follow the W3C VC standard and therefore will not currently be accepted in the LCW.</p>
+            
+            <p>One of the goals of the DCC and the standards community more broadly is to promote the wide adoption of OBv3 — including among known wallet providers like Apple and Google — and fortify the technical infrastructure around them. Though this technology is relatively new, we envision an end result of a well-functioning ecosystem where you can store and share your education and training credentials in the same wallet as your drivers license, vaccination card, and other important documents.</p>
+            
+            <h2 class="pb-2 text-center">Advantages of Open Badges 3.0</h2>
+            
+            <p>The DCC supports OBv3 because they offer significant advantages to:</p>
+            
+            <div style="text-align: left;">
+                <ul>
+                    <li>Learners including students, job seekers, professionals or anyone who wants to share their skills and abilities</li>
+                    <li>Issuers: The school, training program, organization, or person who makes claims about achievements (for example, a college issuing a bachelor's degree)</li>
+                    <li>Verifiers: The person or entity who wants to verify information about skills and abilities (such as an employer)</li>
+                </ul>
+            </div>
+            
+            <p>These advantages include:</p>
+            
+            <div style="text-align: left;">
+                <ul>
+                    <li>Digital signatures: OBv3s are digitally signed by the issuer. Once signed they cannot be changed. This drastically reduces the proliferation of fraudulent credentials which undermine the credibility of legitimate ones.</li>
+                    <li>Metadata capability: A typical PDF or web-hosted credential may just be an image with the name, relevant dates, and issuer information. OBv3 can include embedded metadata about learning objectives, skills, and other valuable information for verifiers.</li>
+                    <li>Decentralization: Learners maintain control over credentials and decide when and with whom to share them.</li>
+                    <li>Interoperability: OBv3 are community-based open standards developed collaboratively to make credentials usable across different platforms and organizations.</li>
+                    <li>Instant verification: Credentials can be verified in moments, significantly reducing the time needed to validate skills and abilities that may stand between a person and new opportunities.</li>
+                    <li>Privacy: Information in credentials becomes publicly available at the credential holder's discretion. The LCW does not collect or store personal information, track data or usage.</li>
+                </ul>
+            </div>
+            
+            <h2 class="pb-2 text-center">Practical Example</h2>
+
+            <div class="text-center mb-4">
+    <img src="images/59097729-15f0-4aa3-b071-1a639ad2db2d.jpeg" alt="olivia slide" class="img-fluid d-block mx-auto" style="max-width: 600px;">
+    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">The trust model of Open Badges 3.0</p>
+</div>
+            
+            <p>Olivia attends university and earns a Bachelor's degree. Her university issues her diploma in the OBv3 format, which she claims and stores in a digital wallet like the LCW. She can store this alongside other OBv3 credentials - certificates from online courses, professional certifications, or badges for skills she developed as a barista.</p>
+            
+            <p>When Olivia applies for jobs, she selects which credentials to share with each prospective employer. Employers can instantly verify that her credentials are valid and unaltered, and can view embedded details about her specific skills and learning outcomes.</p>
+            
+            <p>Employers can also confirm the issuer's identity, verifying that her degree was actually digitally signed by her university, not someone impersonating them. This additional layer of trust comes from an issuer identity registry, which validates that credentials truly come from legitimate institutions.</p>
+            
+        </div>
+    </header>
+
+     <!-- Page Footer -->
+                    <footer>
+                      <p class="footer-text text-center">
+                          Copyright 2022-2025, Massachusetts Institute of Technology</p>
+                      <p class="footer-text text-center">
+				<a href="https://digitalcredentials.mit.edu/">Digital Credentials Consortium</a></p>
+                        <p class="footer-text text-center">
+				<a href="terms.html">Terms and Conditions of Use</a> • <a href="privacy.html">Privacy Policy</a> • <a href="https://accessibility.mit.edu/">Accessibility</a> • <a href="https://github.com/digitalcredentials/learner-credential-wallet">View on Github</a></p></footer> <!-- end of page footer -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+</body>
+</html>

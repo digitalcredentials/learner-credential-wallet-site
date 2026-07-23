@@ -22,8 +22,9 @@ html {
 body, p {
 	color: #ffffff; 
 	background-color: #1f2936;
-	font: 400 1rem/1.625rem "Roboto", sans-serif;
-	font-size: 1.25rem;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300 !important;  
+	font-size: 1.23rem;
 	line-height: 1.7rem;
 	text-align: left;
 }
@@ -84,12 +85,6 @@ footer {
 	margin-bottom: 0.5rem;
 }
 
-.version-text {
-	color: #c7c7c7;
-	font-size: 1rem;
-	margin-top: -0.5rem;
-}
-
 .p-small {
 	font-size: 1rem;
 }
@@ -116,7 +111,64 @@ a:hover {
 	color: white;
 }
 
+/* Force bold text */
+strong, b {
+    font-weight: bold;
+}
 
+.title {
+	font-weight: bold;
+	font-family: 'Rubik', sans-serif;
+	font-size: 2.9rem;
+	line-height: 2.75rem;
+	letter-spacing: -0.7px;
+	color: #ffffff;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #1f2936;
+    box-shadow: none;
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #ffffff !important;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff !important;
+    margin: 0 0.5rem;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #429EA6 !important;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* rest of your CSS continues... */
 /*****************/
 /*    Learner Credential Wallet Page    */
 /*****************/
@@ -159,4 +211,32 @@ a:hover {
 
 }
 /* end of min-width 500px */
+
+.checkmark-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checkmark-list li {
+  padding-left: 2em;
+  position: relative;
+}
+
+.checkmark-list li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 

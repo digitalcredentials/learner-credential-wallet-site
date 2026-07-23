@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Open Source Learner Credential Wallet">
+    <meta name="author" content="MIT">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="Learner Credential Wallet" /> <!-- website name -->
+    <meta property="og:site" content="lcw.app" /> <!-- website link -->
+    <meta property="og:title" content="Learner Credential Wallet"/> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="Store your learner credentials" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Learner Credential Wallet</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/lcw-icon.png" alt="LCW" height="30" class="d-inline-block align-top mr-2">
+                Learner Credential Wallet
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="userguide.html">User Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="privacy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- User Guide content-->
+    <header id="Learner Credential Wallet" class="lcw" style="padding-top: 80px;">
+        <div class="container mt-5 px-4">
+            <h1 class="pb-2 text-center">User Guide</h1>
+            <h2 class="pb-2 text-center">How to install the Learner Credential Wallet (LCW)</h2>
+            
+			<ul class="checkmark-list">
+                <li>First, you will need to download the LCW app on the app store for <a href="https://apps.apple.com/us/app/learner-credential-wallet/id1590615710">Apple iOS</a> or <a href="https://play.google.com/store/apps/details?id=app.lcw">GooglePlay</a> store for Android.</li>
+                <li>Select "Quick Setup" and enter in a password. You will need to store this password somewhere safe as the LCW does not store personal information, collect data or track usage. Please see the <a href="privacy.html">Privacy Policy</a> for more information.</li>
+                <li>Select "Take Me To My Wallet." During this setup process, the wallet will create a default profile with a digital identity called a decentralized identifier, or DID. A DID is a permanent, unique ID number stored in your wallet that proves who you are to web entities.</li>
+                <li>Your wallet is now set up and ready to store credentials</li>
+            </ul>
+
+            <div class="text-center mb-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-12 mb-3">
+                        <img src="images/Quick set up.PNG" alt="Creating Wallet screen" class="img-fluid d-block mx-auto" style="max-width: 300px;">
+                        <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 1: Set up your wallet</p>
+                    </div>
+                    <div class="col-md-6 col-12 mb-3">
+                        <img src="images/Take me to my wallet.PNG" alt="Learner Credential Wallet welcome screen" class="img-fluid d-block mx-auto" style="max-width: 300px;">
+                        <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 2: Go to your wallet</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="pb-2 text-center">How to claim a credential</h2>
+            <p class="pt-4">There are several ways you may receive a credential. Your institution may send you an email containing a link or a QR code or there may be instructions for claiming your credential on a course platform or website. Here are the ways you can claim and add your credential to the LCW.</p>
+            
+            <h2 class="pb-2">From a QR code:</h2>
+            <ul>
+                <li>Scan the QR code using the camera on your mobile device. If you have downloaded the LCW, this should open the application on your phone.</li>
+                <li>Select your profile.</li>
+                <li>Select "Accept."</li>
+                <li>You will be navigated to the "credential preview" which shows you the rendered credential.</li>
+                <li>When you return "home" you will see the credential listed.</li>
+            </ul>
+
+            <div class="text-center mb-4">
+                <!-- QR Code Image on Top -->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-12 text-center">
+                        <img src="images/qr code SCAN.png" alt="QR code scan page" class="img-fluid d-block mx-auto" style="max-width: 600px;">
+                        <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 1: Scan QR code</p>
+                    </div>
+                </div>
+                
+                <!-- Three Phone Screenshots Below -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                        <img src="images/decline:accept.PNG" alt="Accept or decline credential" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                        <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 2: Accept credential</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                        <img src="images/select the credential.PNG" alt="Credential added confirmation" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                        <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 3: Added to wallet. Click to view</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                        <img src="images/example credential.PNG" alt="Example credential preview" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                        <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 4: Example credential</p>
+                    </div>
+                </div>
+            </div>
+	
+            <h2 class="pb-2">Paste JSON or URL (a web link)</h2>
+            <ul>
+                <li>Navigate to the "Add Credential" page on the LCW. This is indicated by the plus sign icon on the bottom navigation.</li> 
+                <li>Locate the box "Paste JSON or URL." If you have a URL or a link you can paste that link into the box. Additionally, if you have JSON — which is a block of code — you can paste that code into the box. Select Add.</li> 
+                <li>Select your profile.</li>
+                <li>Select "Accept."</li>
+                <li>You will be navigated to the "credential preview" which shows you the rendered credential.</li>
+                <li>When you return "home" you will see the credential listed.</li>
+            </ul>
+
+			<div class="text-center mb-4">
+                <!-- JSON BLOB IMAGE ON TOP -->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-12 text-center">
+                        <img src="images/example json2.png" alt="example JSON" class="img-fluid d-block mx-auto" style="max-width: 600px;">
+                        <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 1: Example JSON code</p>
+                    </div>
+                </div>
+                
+                <!-- Three Phone Screenshots Below -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                        <img src="images/add from json.PNG" alt="Accept or decline credential" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                        <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 2: Add credential</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                        <img src="images/FROM JSON 3.PNG" alt="Credential added confirmation" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                        <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 3: Paste JSON</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                        <img src="images/from URL.PNG" alt="Example credential preview" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                        <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 3: Paste URL</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="pb-2">From file</h2>
+            <ul>
+                <li>You may have received a file containing the credential code, or JSON. Save this file so that you can access it from your mobile device.</li> 
+                <li>Navigate to the "Add Credential" page on the LCW. This is indicated by the plus sign icon on the bottom navigation.</li>
+                <li>Select "Add from file" and select the file in your phone. Select your profile.</li>
+                <li>Select "Accept."</li>
+                <li>You will be navigated to the "credential preview" which shows you the rendered credential.</li>
+                <li>When you return "home" you will see the credential listed.</li>
+            </ul>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                    <img src="images/add from file.PNG" alt="Accept or decline credential" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 2: Select Add from file</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                    <img src="images/choose file.PNG" alt="Credential added confirmation" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 3: Choose file</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                    <img src="images/decline:accept.PNG" alt="Example credential preview" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 3: Accept</p>
+                </div>
+            </div>
+			
+            <h2 class="pb-2">From a badge image</h2>
+            <ul>
+                <li>Some credential issuers may be issuing OBv3 but using an approach called "badge images." In this case, the process is similar to uploading your credential "from file" as described above. However, the file must be a .png image. For more information on this please visit the <a href="https://blog.dcconsortium.org/adding-credly-badges-to-the-learner-credential-wallet-57142b44762d">DCC blog post</a> on this topic.</li>
+            </ul>
+
+            <h2 class="pb-2">How to share a credential</h2>
+            <p>There are a number of ways to share your credential. Most of them require you to "create a public link." This means that the LCW will create a link that is hosted on a server currently maintained by the DCC. This is a public URL, meaning that anyone with the link can view your verified credential in the DCC verification app called VerifierPlus. For more information on what a public link means with regards to data privacy, please see the LCW Privacy Policy.</p>
+            <p>To share a credential from the LCW:</p>
+            <ul>
+                <li>Navigate to your home page. From here you can either
+                    <ul>
+                        <li>Select the share icon on the bottom navigation. Select "Create Public Link." This will ask you to select the credential you want to share. Then select "Create Link.</li>
+                        <li>OR select the credential you want to share then select the three dots in the top right corner and select "share." Then select "Create a public link."</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                    <img src="images/3 dots share.PNG" alt="Accept or decline credential" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 1: Navigate to credential, select the 3 dots and select "Share"</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                    <img src="images/create public link.PNG" alt="Credential added confirmation" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 2: Create a public link</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                    <img src="images/create link.PNG" alt="Example credential preview" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 4: Create link</p>
+                </div>
+		        <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                    <img src="images/share page.PNG" alt="Example credential preview" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 5: Choose method to share</p>
+                </div>
+            </div>
+				
+            <ul>
+                <li>Once you have created a public link, you will be able to share your credential as:
+                    <ul>
+                        <li>A deeplink or URL: Select "Copy" and send the URL via email, text message or other channels.</li>
+                        <li>A text file: Select "Send Credential" and choose from your device where you would like to send the file. Note that this file will not be a rendered image of the credential but the JSON code. More information on how to use this code is explained below in the section on VerifierPlus.</li>
+                        <li>A QR code: A person seeking to verify your credential can scan the QR code on your LCW using their mobile device.</li>
+                        <li>Share to Linkedin: Select "Add to Linkedin Profile" and then "Add to Linkedin." This will prompt your mobile device to open the Linkedin app if you have it downloaded and log into your Linkedin account. From here you can add your credential to your Linkedin profile.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2 class="pb-2">Verifier Plus</h2>
+            <p>The DCC runs a website called VerifierPlus which will verify your credentials on your computer. The public link generated when you share your credential will direct the recipient to VerifierPlus.org. After choosing to "Create Public Link" you would be able to select the blue "copy" button to copy the URL. To verify:</p>
+            <ul>
+                <li>Using a URL: Copy the URL from the share page in LCW. You can send this link to your computer using email, text or messaging app. Paste the URL into the box labeled "Paste JSON or URL."</li>
+                <li>Using file upload: Visit VerifierPlus.org. Locate the section labeled "Drag and drop a file here or browse." You can either select the text file in your document finder and drag it into the box or click "browse" to choose from files in your document finder. Both options will render your credential in VerifierPlus.</li>
+                <li>Pasting JSON: Locate your JSON text file and copy the entire code to your clipboard. Locate the section in VerifierPlus labeled "Paste JSON or URL" and paste the entire code into the box. Select "Verify." This will render your credential in VerifierPlus. Note: You must copy and paste the code exactly as it appears. Missing even a single character will result in your credential being unreadable by VerifierPlus.</li>
+            </ul>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                    <img src="images/vp json.png" alt="Accept or decline credential" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Option 1: Paste JSON</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                    <img src="images/vp URL.png" alt="Credential added confirmation" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Option 2: Paste URL</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                    <img src="images/vp add file.png" alt="Example credential preview" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 3: Option 3: Upload file</p>
+                </div>
+            </div>
+
+	        <div class="row justify-content-center mb-4">
+                <div class="col-12 text-center">
+                    <img src="images/verified on vp.png" alt="example JSON" class="img-fluid d-block mx-auto" style="max-width: 600px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Example of credential verified on VerifierPlus</p>
+                </div>
+            </div>
+				
+            <h2 class="pb-2">About credential verification</h2>
+            <p>The LCW will display OBv3 compatible credentials. The application also verifies credentials in real time. You can check the verification status of your credential by navigating to the credential preview and scrolling down to the section labeled "Credential Verification and Validation." You will see a list of checks that the application has performed to verify that your credential:</p>
+            <ul>
+                <li>Is in a supported format (meaning it is OBv3 compliant)</li>
+                <li>Has a valid signature (has been digitally signed by the issuer)</li>
+                <li>Is in a known issuer registry (see section on issuer registries)</li>
+                <li>Has not been revoked (meaning it has not been cancelled by the issuer)</li>
+                <li>Has not expired (is still valid according to the dates set by the issuer)</li>
+            </ul>
+            <p>A green checkmark indicates that a credential is verified. A red "X" or a yellow "!" next to any of these items indicates that the credential has not passed this particular verification check. This does not necessarily mean that the credential is fraudulent or illegitimate. For example, a credential that is expired still indicates that you have earned or received it, but it may no longer be valid according to the expiration date set forth by the issuer.</p>
+
+	        <div class="text-center mb-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-12 mb-3">
+                        <img src="images/cred verification ok.PNG" alt="Creating Wallet screen" class="img-fluid d-block mx-auto" style="max-width: 300px;">
+                        <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Verified Credential</p>
+                    </div>
+                    <div class="col-md-6 col-12 mb-3">
+                        <img src="images/cred verification exp.PNG" alt="Learner Credential Wallet welcome screen" class="img-fluid d-block mx-auto" style="max-width: 300px;">
+                        <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Expired credential shows warning</p>
+                    </div>
+                </div>
+            </div>
+		
+            <h2 class="pb-2">How to backup your credentials</h2>
+            <p>The LCW does not store your username or password. There is no password retrieval process if you forget your password or lose your mobile device. Therefore, we recommend that you back up your credentials by creating a copy of your wallet contents.</p>
+            <ul>
+                <li>Navigate to the bottom of the wallet application and select the cog icon on the bottom right hand corner.</li>
+                <li>From the list, select "Backup Wallet" and then "Create Backup." This will prompt the download of a JSON code file. Save this file to your mobile device or computer.</li>
+            </ul>
+
+	        <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                    <img src="images/cog.PNG" alt="Accept or decline credential" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 1: Navigate to settings</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                    <img src="images/settings list.PNG" alt="Credential added confirmation" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 2: Select Backup wallet</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mb-3 text-center">
+                    <img src="images/create backup.PNG" alt="Example credential preview" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Step 3: Create Backup and save to device</p>
+                </div>
+            </div>
+		
+            <h2 class="pb-2">About issuer registries</h2>
+            <p>An issuer registry is a digital list containing the signing keys of a particular set of issuers governed by an established authority. Think of it like a guest list for a party containing the contact information of attendees. The host of the party decides who is on the list and confirms that the phone number listed belongs to the person they have chosen to invite. The DCC, for example, has its own issuer registry containing the digital IDs of all the members of the consortium. When a credential is issued by a DCC member institution and claimed and stored on the LCW by a learner, you will see that this institution is listed on the "DCC Member Registry." This adds a layer of trust and legitimacy to the credential, enabling a verifier to confirm that the entity that issued and signed the credential can be traced back to the real life organization, institution, or person who has claimed the learner has earned the achievement.</p>
+            <p>To determine whether or not your credential has been verified as being issued by an organization on a known issuer registry navigate to the credential preview page.</p>
+            <ul>
+                <li>A credential whose issuer is not on a registry will show a yellow "!" warning in the "Credential Verification and Validation" section at the bottom of the page. This does not mean that the credential is fraudulent or illegitimate, only that the issuer is not listed on an issuer registry.</li>
+                <li>A credential that has been signed by an issuer on an issuer registry will display with a green checkmark next to "has been issued by a known issuer." At the top of the credential preview, just beneath "Issuer" you can select the blue button that says "Issuer Details" to see more about which issuer identity registry(ies) the issuer is a part of.</li>
+            </ul>
+
+		    <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-6 col-12 mb-3 text-center">
+                    <img src="images/issuer registry known.jpg" alt="Accept or decline credential" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Credential is on a known issuer registry</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 mb-3 text-center">
+                    <img src="images/issuer registry not known.jpg" alt="Credential added confirmation" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+                    <p class="text-muted text-center" style="font-size: 0.9rem; margin-top: 0.5rem;">Credential is verified but not on a known issuer registry</p>
+                </div>
+            </div>
+		
+            <p>Issuer identity registries are a relatively recent development in digital credentials. To learn more about the DCC's research and approach to this part of the credential ecosystem, read the <a href="https://digitalcredentials.mit.edu/docs/Credential-Engine-and-Digital-Credentials-Consortium_-Issuer-Identity-Registry-Research-Report.pdf">Issuer Identity Registry Research Report</a>.</p> 
+
+            <!-- Page Footer -->
+            <footer>
+                <p class="footer-text text-center">Copyright 2022-2025, Massachusetts Institute of Technology</p>
+                <p class="footer-text text-center"><a href="https://digitalcredentials.mit.edu/">Digital Credentials Consortium</a></p>
+                <p class="footer-text text-center"><a href="terms.html">Terms and Conditions of Use</a> • <a href="privacy.html">Privacy Policy</a> • <a href="https://accessibility.mit.edu/">Accessibility</a> • <a href="https://github.com/digitalcredentials/learner-credential-wallet">View on Github</a></p>
+            </footer>
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+                
+        
+        
+            
+
+
+            

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Open Source Learner Credential Wallet">
+    <meta name="author" content="MIT">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="Learner Credential Wallet" /> <!-- website name -->
+    <meta property="og:site" content="lcw.app" /> <!-- website link -->
+    <meta property="og:title" content="Learner Credential Wallet"/> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="Store your learner credentials" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Learner Credential Wallet</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    
+    <style>
+        /* Custom button styles */
+        .btn-custom {
+            background-color: #429EA6;
+            border-color: #429EA6;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .btn-custom:hover {
+            background-color: #3a8a91;
+            border-color: #3a8a91;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/lcw-icon.png" alt="LCW" height="30" class="d-inline-block align-top mr-2">
+                Learner Credential Wallet
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="userguide.html">User Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="privacy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- History content -->
+    <header id="Learner Credential Wallet" class="lcw" style="padding-top: 80px;">
+        <div class="container mt-5">
+            <h1 class="pb-2 text-center">History</h1>
+            
+            <p>The Learner Credential Wallet was developed by the <a href="https://digitalcredentials.mit.edu/">Digital Credentials Consortium (DCC)</a>, a global network of postsecondary education institutions collaborating to develop software and promote adoption of W3C Verifiable Credentials and aligned standards like Open Badges 3.0 in higher education.</p>
+            
+            <p>The DCC published its foundational <a href="https://digitalcredentials.mit.edu/docs/white-paper-building-digital-credential-infrastructure-future.pdf">white paper</a> in 2020, identifying the need for shared, trusted infrastructure to serve as the framework for a digital credentials ecosystem. At that time, the critical missing component was a digital wallet. With support from the United States Department of Education, the DCC developed the <a href="docs/Learner-Credential-Wallet-Specification-May-2021.pdf">Open Source Learner Credential Wallet specification</a> and reference implementation. The team piloted the wallet at Georgia Institute of Technology, San Jose City College, and College Unbound, allowing them to understand practical wallet usage across a diverse range of institutions.</p>
+            
+            <p>The LCW was designed primarily as a proof of concept. It serves as an open source, free-to-use tool that demonstrates the overall functionality of the VC ecosystem, rather than an out-of-the-box, full-service product. While the DCC team leads development and maintenance of the source code, the organization encourages others to use it as a model for creating wallet solutions that meet their specific context or use case needs. Arizona State University's <a href="https://pocket.asu.edu/">Pocket</a> serves as one such example.</p>
+            
+            <p>Beyond the LCW, the DCC has developed other core pieces of VC infrastructure including:</p>
+            
+            <ul>
+                <li><strong>Issuer microservices:</strong> Software for entities to issue VCs, organized into modular, customizable components</li>
+                <li><strong>Verification software:</strong> <a href="https://verifierplus.org/">VerifierPlus</a> website that the DCC hosts for verifying credentials</li>
+                <li><strong>Issuer Identity registry:</strong> <a href="https://digitalcredentials.mit.edu/docs/Credential-Engine-and-Digital-Credentials-Consortium_-Issuer-Identity-Registry-Research-Report.pdf">reference implementation</a> and <a href="https://digitalcredentials.mit.edu/docs/Governance-Framework-for-Issuer-Identity-Registries.pdf">governance framework</a> - Specification for developing an issuer identity registry that creates an additional layer of trust by verifying issuer identity</li>
+            </ul>
+
+            <!-- Page Footer -->
+            <footer>
+                <p class="footer-text text-center">Copyright 2022-2025, Massachusetts Institute of Technology</p>
+                <p class="footer-text text-center"><a href="https://digitalcredentials.mit.edu/">Digital Credentials Consortium</a></p>
+                <p class="footer-text text-center"><a href="terms.html">Terms and Conditions of Use</a> • <a href="privacy.html">Privacy Policy</a> • <a href="https://accessibility.mit.edu/">Accessibility</a> • <a href="https://github.com/digitalcredentials/learner-credential-wallet">View on Github</a></p>
+            </footer>
+        </div>
+    </header>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
