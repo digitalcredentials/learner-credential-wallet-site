@@ -142,27 +142,25 @@
             <div class="text-container" style="text-align: left;">
                 <h1 class="pb-2 text-center">Learner Credential Wallet Frequently Asked Questions</h1>
                 
-                <p class="faq-question">1. What is the Digital Credentials Consortium and why did we develop the Learner Credential Wallet (LCW)?</p>
-                <p>The Digital Credentials Consortium (DCC) is a global network of postsecondary education institutions collaborating to advance the understanding and use of portable, verifiable, digital credentials in higher education through open source technology development and leadership, research and advocacy. The DCC developed the LCW with support from a grant from the US Department of Education. The open source wallet application was designed as a reference implementation as a tool for proving the concept of interoperable, verifiable credentials. For more information visit the <a href="history.html">History</a> section and the <a href="https://digitalcredentials.mit.edu/">DCC website</a>.</p>
-                
-                <p class="faq-question">2. What mobile devices are compatible with the LCW?</p>
+
+                <p class="faq-question">1. What mobile devices are compatible with the LCW?</p>
                 <p>The LCW is compatible with iPhone devices running iOS 15.1 or higher and Android devices running version 15 or higher. Devices running older versions of these operating systems may experience software issues.</p>
                 
-                <p class="faq-question">3. Can I use the LCW without the internet?</p>
+                <p class="faq-question">2. Can I use the LCW without the internet?</p>
                 <p>You can display saved credentials on your device without the internet. However, while offline you will not be able to add new credentials or create a public link to share credentials.</p>
                 
-                <p class="faq-question">4. I've forgotten my password. How can I access my credentials?</p>
+                <p class="faq-question">3. I've forgotten my password. How can I access my credentials?</p>
                 <p>As the LCW does not store and cannot access your account information or password. This information is saved locally to your mobile device. We recommend that you make a note of your password and save it in a secure location. We also strongly recommend that you backup your credentials. Please see the section entitled "How do I back up my wallet?".</p>
                 
-                <p class="faq-question">5. How is the LCW different from the Apple or Google wallet? Can I store my credentials there?</p>
+                <p class="faq-question">4. How is the LCW different from the Apple or Google wallet? Can I store my credentials there?</p>
                 <p>The LCW only stores credentials that have been issued in alignment with certain web standards — W3C Verifiable Credentials (VCs) and Open Badges 3.0 (OBv3). For more information on what this means, see About W3C Verifiable Credentials and Open Badges 3.0. Popular mobile wallets including Apple and Google wallet do not currently accept VCs or OBv3s so you cannot store these credentials there at this time. We hope that this changes in the future so that you can use the wallet that is most convenient for you.</p>
                 
-                <p class="faq-question">6. How do I know if my credential will be accepted by the LCW?</p>
+                <p class="faq-question">5. How do I know if my credential will be accepted by the LCW?</p>
                 <p>Ideally, the issuer (the education institution or badging platform) will clearly indicate that your credential has been created in the OBv3 format. Look for information that says your credential has been generated according to the W3C Verifiable Credentials or Open Badges 3.0 specification. When in doubt, you can contact the issuer to confirm compatibility.</p>
                 <p>Another indication would be that the credential file (see claim from file section) ends with .json. This is the format that is used for OBv3 credentials.</p>
                 <p>If you are not sure of the information above, the best way to see if your credential will be accepted is to attempt to add it to the LCW using the instructions in the <a href="userguide.html">User Guide</a>. A non-compliant credential will produce an error message.</p>
                 
-                <p class="faq-question">7. Can I create a PDF or printable version of my credential?</p>
+                <p class="faq-question">6. Can I create a PDF or printable version of my credential?</p>
                 <p>Some credentials may allow for you to download a PDF or printable version of your credential. This is determined by whether or not the issuer has decided to include this option when they designed your credential. To see if it is possible to download a credential as a PDF:</p>
                 <ul>
                     <li>Select a credential in preview and click the three dots in the top right corner. Select "Share" and then "Create a Public Link." Select "Create Link" when prompted.</li>
@@ -171,14 +169,16 @@
                 <p>For credential issuers: Issuers can learn more about configuring PDF export <a href="https://github.com/openwallet-foundation-labs/learner-credential-wallet">here</a>.</p>
             </div>
 
-            <!-- Page Footer -->
+            </div> <!-- end of text-container -->
             <footer>
-                <p class="footer-text text-center">Copyright 2022-2025, Massachusetts Institute of Technology</p>
-                <p class="footer-text text-center"><a href="https://digitalcredentials.mit.edu/">Digital Credentials Consortium</a></p>
-                <p class="footer-text text-center"><a href="terms.html">Terms and Conditions of Use</a> • <a href="privacy.html">Privacy Policy</a> • <a href="https://accessibility.mit.edu/">Accessibility</a> • <a href="https://github.com/digitalcredentials/learner-credential-wallet">View on Github</a></p>
+                <p class="footer-text text-center">
+                    <a href="https://dccommons.org/">Digital Credentials Commons</a></p>
+                <p class="footer-text text-center">
+                    <a href="privacy.html">Privacy Policy</a> • <a href="https://github.com/digitalcredentials/learner-credential-wallet">View on Github</a></p>
             </footer>
-        </div>
-    </header>
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+
 
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script>
